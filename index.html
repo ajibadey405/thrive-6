@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></head>
+<body>
+    <div id="top-header">
+        <div id="circle-1"></div>
+        <div id="circle-2"></div>
+        <div id="circle-3"></div>
+    </div>
+    <div class="container">
+        <aside id="sidebar">
+            <div id="logo">
+                <img src="./image/logo.svg" alt="aerten-logo">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><img src="./image/dashboard.svg" alt=""><a href="#">Dashboard</a></li>
+                   <li class="active"><img src="./image/roles.svg" alt=""><a href="#">Roles</a></li>
+                    <li><img src="./image/employees.svg" alt=""><a href="./index1.html">Employees</a></li>
+                   <li><img src="./image/payroll.svg" alt=""><a href="#">Payroll</a></li>
+                    <li><img src="./image/reports.svg" alt=""><a href="#">Reports</a></li>
+                    <li><img src="./image/settings.svg" alt=""><a href="#">Settings</a></li>
+                </ul>
+                <div id="footer_log">
+                    <img src="./image/logout1.svg" alt=""><label for="">Log out</label>
+                </div>
+            </div>
+        </aside>
+        <main id="main-section">
+            <div id="search-container">
+                <div id="searchbox">
+                    <img src="./image/Search.svg" alt="search image">
+                    <input type="search" placeholder="Search anything here" id="find" onkeyup="search()">
+                    <div id="searchable-content"></div>
+                </div>
+                <div id="searchbox-right">
+                    <img src="./image/settings-1.svg" alt="settings-1" class="image-1">
+                    <img src="./image/bell.svg" alt="notification bell" class="image-2">
+                    <img src="./image/user.svg" alt="user" class="image-3">
+                </div>
+            </div>
+            <div id="parent-container">
+                <div id="role-container">
+                    <div id="role">
+                    <p id="role-1">Roles</p>
+                    <img src="./image/question.svg" alt="question-tooltip">
+                    <p id="role-2">123</p>
+                </div>
+                <div id="assign-newrole">
+                    <button class="button-1" id="assign-role"><img src="./image/add-new1.svg" alt="">Assign</button>
+                    <button class="button-2"><img src="./image/add-new.svg" alt="">New Role</button>
+                </div>
+                </div>
+
+                <div id="active-role-nav">
+                    <a href="#" class="active">All roles</a>
+                    <a href="#">Permissions</a>
+                </div>
+
+                <div id="search-filter-container">
+                    <div id="search-filter">
+                        <img src="./image/Search.svg" alt="search image">
+                        <input type="search" placeholder="Search Roles by Title, Teams or any related keywords">
+                    </div>
+                    <button class="button1"><img src="./image/filter.svg" alt="">Filter</button>
+                    <button class="button2"><img src="./image/hamburger.svg" alt=""></button>
+                    <button class="button3"><img src="./image/windows.svg" alt=""></button>
+                </div>
+
+                <div id="active-role-nav">
+                    <a href="#" class="active">All</a>
+                    <a href="#">Product</a>
+                    <a href="#">Engineering</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Recruitment</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Customer service</a>
+                </div>
+
+                <div id="wrapper">
+                    <div id="card-container">
+                        <div id="card">
+                            <div id="users-images">
+                                <h3>Solution Sales Specialist</h3>
+                                <img src="./image/user1.svg" alt="">                         
+                            </div>
+                            <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                            <ul>
+                                <li>Marketing</li>
+                                <li>Product</li>
+                                <li>Engineering</li>
+                                <li id="design">Design</li>
+                            </ul>
+                            <div id="card-tag">
+                                <img src="./image/user2.svg" alt="user-image">
+                                <div id="name-title">
+                                    <h3>James campion</h3>
+                                    <span>Manager</span>
+                                </div>
+                                <img src="./image/arrow.svg" alt="user-image">
+                            </div>                        
+                        </div>
+                    </div>
+                    <div id="card-container">
+                        <div id="card">
+                            <div id="users-images">
+                                <h3>Solution Sales Specialist</h3>
+                                <img src="./image/user1.svg" alt="">                         
+                            </div>
+                            <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                            <ul>
+                                <li>Marketing</li>
+                                <li>Product</li>
+                                <li>Engineering</li>
+                                <li id="design">Design</li>
+                            </ul>
+                            <div id="card-tag">
+                                <img src="./image/user2.svg" alt="user-image">
+                                <div id="name-title">
+                                    <h3>James campion</h3>
+                                    <span>Manager</span>
+                                </div>
+                                <img src="./image/arrow.svg" alt="user-image">
+                            </div>                        
+                        </div>
+                    </div> 
+                </div>
+                <div id="wrapper">
+                    <div id="card-container">
+                        <div id="card">
+                            <div id="users-images">
+                                <h3>Solution Sales Specialist</h3>
+                                <img src="./image/user1.svg" alt="">                         
+                            </div>
+                            <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                            <ul>
+                                <li>Marketing</li>
+                                <li>Product</li>
+                                <li>Engineering</li>
+                                <li id="design">Design</li>
+                            </ul>
+                            <div id="card-tag">
+                                <img src="./image/user2.svg" alt="user-image">
+                                <div id="name-title">
+                                    <h3>James campion</h3>
+                                    <span>Manager</span>
+                                </div>
+                                <img src="./image/arrow.svg" alt="user-image">
+                            </div>                        
+                        </div>
+                    </div>
+                    <div id="card-container">
+                        <div id="card">
+                            <div id="users-images">
+                                <h3>Solution Sales Specialist</h3>
+                                <img src="./image/user1.svg" alt="">                         
+                            </div>
+                            <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                            <ul>
+                                <li>Marketing</li>
+                                <li>Product</li>
+                                <li>Engineering</li>
+                                <li id="design">Design</li>
+                            </ul>
+                            <div id="card-tag">
+                                <img src="./image/user2.svg" alt="user-image">
+                                <div id="name-title">
+                                    <h3>James campion</h3>
+                                    <span>Manager</span>
+                                </div>
+                                <img src="./image/arrow.svg" alt="user-image">
+                            </div>                        
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+
+
+            <div id="parent-modal">
+                <div id="modal-container">
+                    <div id="container">
+
+                    <img src="./image/close.svg" alt="" class="close">
+                     <div id="modal">
+                        <img src="./image/briefcase.svg" alt="" id="briefcase">
+                        <h3 id="assign">Assign this role</h3>
+                        <p>Select one or multiple employees to assign to this role  <span id="senior-design">“Senior Design Lead “</span></p>
+                        <div id="modal-searchbox">
+                            <img src="./image/Search.svg" alt="search image">
+                            <input type="search" placeholder="Search for an indivdual or team">
+                            <img src="./image/question.svg" alt="">
+                        </div>
+                        <div id="user-list">
+                           <div id="user-active-row">
+                                <img src="./image/user-1.svg" alt="user-1">
+                                <div id="userlist-card">
+                                    <h3>Jennifer Lopez</h3>
+                                    <span>Product Designer, Integrations</span>
+                                </div>
+                                <img src="./image/radio-check.svg" alt="" id="radio-check"> 
+                           </div>
+                           <div id="user-row">
+                                <img src="./image/user-2.svg" alt="user-2">
+                                <div id="userlist-card">
+                                    <h3>Tassy Omah</h3>
+                                    <span>Developer Relations, Payments</span>
+                                </div>
+                                <input type="radio" id="radio-check" name="user">
+                           </div>
+                           <div id="user-row">
+                                <img src="./image/user-3.svg" alt="user-3">
+                                <div id="userlist-card">
+                                    <h3>Emeto winner</h3>
+                                    <span>Backend Developer, Payments</span>
+                                </div>
+                                <input type="radio" id="radio-check" name="user">
+                           </div>
+                           <div id="user-row">
+                                <img src="./image/user-4.svg" alt="user-4">
+                                <div id="userlist-card">
+                                    <h3>Jane mena</h3>
+                                    <span>Technical specialist, Enterprise</span>
+                                </div>
+                                <input type="radio" id="radio-check" name="user">
+                           </div>
+                           <div id="user-row">
+                                <img src="./image/user-5.svg" alt="user-5">
+                                <div id="userlist-card">
+                                    <h3>Kate Magnamay</h3>
+                                    <span>Product Manger, Dashboard</span>
+                                </div>
+                                <input type="radio" id="radio-check" name="user">
+                           </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+        </main>
+    </div>
+    
+<script src="./js/modal.js"></script>
+</body>
+</html>
